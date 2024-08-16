@@ -1,0 +1,5 @@
+@mixin smallMq() {
+	@media (max-width: 500px) {
+		@content;
+	}
+}
