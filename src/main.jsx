@@ -3,7 +3,8 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import HomePage from "./pages/HomePage.jsx";
-import Test from "./pages/Test.jsx";
+import Pokedex from "./pages/Pokedex.jsx";
+import Pokemon from "./pages/Pokemon.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -11,8 +12,12 @@ const router = createBrowserRouter([
 		element: <HomePage />,
 	},
 	{
-		path: "/test",
-		element: <Test />,
+		path: "/pokedex",
+		element: <Pokedex />,
+	},
+	{
+		path: "/pokedex/:pokemonName", // Dynamic path name
+		element: <Pokemon />,
 	},
 ]);
 
