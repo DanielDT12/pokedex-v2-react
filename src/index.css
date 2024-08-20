@@ -289,5 +289,8 @@ textarea:not([rows]) {
   text-decoration: none;
   line-height: 1;
 }
+.pokedex__list {
+  overflow: hidden;
+}
 
 /*# sourceMappingURL=index.css.map */
