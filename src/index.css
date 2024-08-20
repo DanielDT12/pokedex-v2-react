@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Box sizing rules */
 *,
 *::before,
@@ -95,8 +96,198 @@ textarea:not([rows]) {
 }
 
 :root {
-  --ff-global: system-ui;
+  /* POKEMON TYPING COLORS 400 IS DEFAULT TYPE COLOR */
+  /* Grass */
+  --clr-grass-200: #8fd976;
+  --clr-grass-300: #83cd69;
+  --clr-grass-400: #7ac74c;
+  --clr-grass-500: #6eb042;
+  --clr-grass-600: #619939;
+  --clr-grass-700: #557f2f;
+  --clr-grass-800: #496626;
+  /* Fire */
+  --clr-fire-200: #f19d60;
+  --clr-fire-300: #f2904a;
+  --clr-fire-400: #ee8130;
+  --clr-fire-500: #d5722b;
+  --clr-fire-600: #b56324;
+  --clr-fire-700: #94531e;
+  --clr-fire-800: #744318;
+  /* Water */
+  --clr-water-200: #84a4f2;
+  --clr-water-300: #7897f1;
+  --clr-water-400: #6390f0;
+  --clr-water-500: #597bda;
+  --clr-water-600: #4e68bd;
+  --clr-water-700: #4254a0;
+  --clr-water-800: #374183;
+  /* Electric */
+  --clr-electric-200: #f8da54;
+  --clr-electric-300: #f7ce3e;
+  --clr-electric-400: #f7d02c;
+  --clr-electric-500: #d5ba28;
+  --clr-electric-600: #b4a223;
+  --clr-electric-700: #92791d;
+  --clr-electric-800: #706018;
+  /* Normal */
+  --clr-normal-200: #c6c5a1;
+  --clr-normal-300: #b5b490;
+  --clr-normal-400: #a8a77a;
+  --clr-normal-500: #8f8e6a;
+  --clr-normal-600: #797759;
+  --clr-normal-700: #636148;
+  --clr-normal-800: #4d4b38;
+  /* Ice */
+  --clr-ice-200: #a9e0dd;
+  --clr-ice-300: #9bdad7;
+  --clr-ice-400: #96d9d6;
+  --clr-ice-500: #7fb1af;
+  --clr-ice-600: #6b8f8d;
+  --clr-ice-700: #56716f;
+  --clr-ice-800: #415353;
+  /* Fighting */
+  --clr-fighting-200: #d7605b;
+  --clr-fighting-300: #d04f4a;
+  --clr-fighting-400: #c22e28;
+  --clr-fighting-500: #a62722;
+  --clr-fighting-600: #8a201c;
+  --clr-fighting-700: #6d1a16;
+  --clr-fighting-800: #50130f;
+  /* Poison */
+  --clr-poison-200: #b85fb4;
+  --clr-poison-300: #aa4da8;
+  --clr-poison-400: #a33ea1;
+  --clr-poison-500: #8c378b;
+  --clr-poison-600: #753075;
+  --clr-poison-700: #5e295e;
+  --clr-poison-800: #472248;
+  /* Ground */
+  --clr-ground-200: #e8cf89;
+  --clr-ground-300: #e0c478;
+  --clr-ground-400: #e2bf65;
+  --clr-ground-500: #c8a755;
+  --clr-ground-600: #a88d47;
+  --clr-ground-700: #8a733a;
+  --clr-ground-800: #6c5a2d;
+  /* Flying */
+  --clr-flying-200: #b8abf5;
+  --clr-flying-300: #ad9ff4;
+  --clr-flying-400: #a98ff3;
+  --clr-flying-500: #8d76d3;
+  --clr-flying-600: #7560ae;
+  --clr-flying-700: #5d4a88;
+  --clr-flying-800: #453462;
+  /* Psychic */
+  --clr-psychic-200: #fa8fa7;
+  --clr-psychic-300: #f97d98;
+  --clr-psychic-400: #f95587;
+  --clr-psychic-500: #d34875;
+  --clr-psychic-600: #a93a5d;
+  --clr-psychic-700: #7e2b45;
+  --clr-psychic-800: #531d2d;
+  /* Bug */
+  --clr-bug-200: #bbcd45;
+  --clr-bug-300: #adc335;
+  --clr-bug-400: #a6b91a;
+  --clr-bug-500: #909f15;
+  --clr-bug-600: #7a8411;
+  --clr-bug-700: #64690e;
+  --clr-bug-800: #4d4f0a;
+  /* Rock */
+  --clr-rock-200: #c9bb5d;
+  --clr-rock-300: #c2b150;
+  --clr-rock-400: #b6a136;
+  --clr-rock-500: #9b8930;
+  --clr-rock-600: #7f7129;
+  --clr-rock-700: #635922;
+  --clr-rock-800: #47411b;
+  /* Ghost */
+  --clr-ghost-200: #83709e;
+  --clr-ghost-300: #7a6496;
+  --clr-ghost-400: #735797;
+  --clr-ghost-500: #60487f;
+  --clr-ghost-600: #4f3c68;
+  --clr-ghost-700: #3d2f51;
+  --clr-ghost-800: #2b223a;
+  /* Dragon */
+  --clr-dragon-200: #7a5fff;
+  --clr-dragon-300: #714efc;
+  --clr-dragon-400: #6f35fc;
+  --clr-dragon-500: #6130d9;
+  --clr-dragon-600: #5128b4;
+  --clr-dragon-700: #411f8e;
+  --clr-dragon-800: #311769;
+  /* Dark */
+  --clr-dark-200: #7f6b54;
+  --clr-dark-300: #766149;
+  --clr-dark-400: #705746;
+  --clr-dark-500: #5e483d;
+  --clr-dark-600: #4d3b34;
+  --clr-dark-700: #3c2e2b;
+  --clr-dark-800: #2b2222;
+  /* Steel */
+  --clr-steel-200: #cbcbd6;
+  --clr-steel-300: #b9b9c7;
+  --clr-steel-400: #b7b7ce;
+  --clr-steel-500: #9e9eb4;
+  --clr-steel-600: #838399;
+  --clr-steel-700: #69697d;
+  --clr-steel-800: #4f4f61;
+  /* Fairy */
+  --clr-fairy-200: #e09ab3;
+  --clr-fairy-300: #db89a9;
+  --clr-fairy-400: #d685ad;
+  --clr-fairy-500: #b47594;
+  --clr-fairy-600: #93647a;
+  --clr-fairy-700: #725360;
+  --clr-fairy-800: #514247;
+  --ff-global: system-ui, sans-serif;
+  font-family: var(--ff-global);
   color-scheme: dark light;
+}
+
+.homepage {
+  display: grid;
+  place-content: center;
+  min-height: 100dvh;
+}
+.homepage__wrapper {
+  border: 1px solid green;
+}
+.homepage__pkmn-logo {
+  width: 24rem;
+  height: 24rem;
+}
+.homepage__links-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid red;
+}
+.homepage__links-list li {
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+}
+.homepage__links-list li a {
+  text-decoration: none; /* 3 level nesting ikke så bra, men slipper class */
+}
+
+.pokedex {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.pokedex__nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.pokedex__link {
+  font-size: 3rem;
+  text-decoration: none;
+  line-height: 1;
 }
 
 /*# sourceMappingURL=index.css.map */
