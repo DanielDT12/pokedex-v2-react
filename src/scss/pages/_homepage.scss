@@ -1,0 +1,30 @@
+.homepage {
+	display: grid;
+	place-content: center;
+	min-height: 100dvh;
+
+	&__wrapper {
+		border: 1px solid green;
+	}
+
+	&__pkmn-logo {
+		width: 24rem;
+		height: 24rem;
+	}
+
+	&__links-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		border: 1px solid red;
+
+		& li {
+			display: grid;
+			place-content: center;
+			padding: 1rem;
+
+			& a {
+				text-decoration: none; /* 3 level nesting ikke så bra, men slipper class */
+			}
+		}
+	}
+}
