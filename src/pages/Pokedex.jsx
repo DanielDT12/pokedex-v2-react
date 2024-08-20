@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PokemonList from "../scss/components/PokemonList";
 
 export default function Test() {
 	return (
@@ -12,6 +13,7 @@ export default function Test() {
 					</nav>
 					<h1>Pokédex</h1>
 				</div>
+				<PokemonList className="pokedex__list" />
 			</main>
 		</>
 	);
