@@ -1,0 +1,41 @@
+.pokemon {
+	max-height: 800px; // Placeholder, trenger bedre overflow
+	overflow-x: scroll;
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+
+	&__list-item {
+		padding: 1rem;
+		border: 1px solid white; // placeholder
+		border-radius: 0.75rem;
+	}
+
+	&__link {
+		color: white; // Placeholder til jeg begynner hoved styling
+		text-decoration: none;
+	}
+
+	&__name {
+		font-size: clamp(1.125rem, 3vw, 1.875rem);
+		text-transform: capitalize;
+	}
+
+	&__type {
+		width: 4rem;
+		border: 1px solid white;
+		border-radius: 100vw;
+		padding: 0.5em;
+		font-size: clamp(0.875rem, 3vw, 1rem);
+		text-transform: capitalize;
+		text-align: center;
+		line-height: 1;
+	}
+
+	&__image {
+		max-width: 6rem;
+	}
+}
