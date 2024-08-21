@@ -40,28 +40,35 @@ export default function PokemonList() {
 	}, []);
 
 	if (loading) {
-		return <div>Loading....</div>;
+		return <div>Loading....</div>; // placeholder, skal lage custom loading component
 	}
 	return (
-		<ul className="pokedex__list" role="list">
-			{pokemonList.map((pokemon, index) => (
-				<li key={index}>
-					<Link to={`/pokedex/${pokemon.name}`}>
-						<div>
-							<h2>{pokemon.name}</h2>
-							<p>#{pokemon.id}</p>
-						</div>
-						<div>
-							<div>
-								<p>{pokemon.types[0]}</p>
-								<p>{pokemon.types[1]}</p>
-								{/** TRENGER FIX, ER IKKE ALLE SOM HAR 2 TYPER */}
+		<div className="pokemon">
+			<ol className="pokemon__list" role="list">
+				{pokemonList.map((pokemon, index) => (
+					<li className="pokemon__list-item" key={index}>
+						<Link className="pokemon__link" to={`/pokedex/${pokemon.name}`}>
+							<div className="flex-between">
+								<h2 className="pokemon__name">{pokemon.name}</h2>
+								<p>#{pokemon.id}</p>
 							</div>
-							<img src={pokemon.sprite} alt={pokemon.name} />
-						</div>
-					</Link>
-				</li>
-			))}
-		</ul>
+							<div className="flex-between">
+								<div className="flex-col" style={{ gap: ".5rem" }}>
+									<p className="pokemon__type">{pokemon.types[0]}</p>
+									{pokemon.types[1] && (
+										<p className="pokemon__type">{pokemon.types[1]}</p>
+									)}
+								</div>
+								<img
+									className="pokemon__image"
+									src={pokemon.sprite}
+									alt={pokemon.name}
+								/>
+							</div>
+						</Link>
+					</li>
+				))}
+			</ol>
+		</div>
 	);
 }
