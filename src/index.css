@@ -98,149 +98,149 @@ textarea:not([rows]) {
 :root {
   /* POKEMON TYPING COLORS 400 IS DEFAULT TYPE COLOR */
   /* Grass */
-  --clr-grass-200: #8fd976;
-  --clr-grass-300: #83cd69;
-  --clr-grass-400: #7ac74c;
-  --clr-grass-500: #6eb042;
-  --clr-grass-600: #619939;
-  --clr-grass-700: #557f2f;
-  --clr-grass-800: #496626;
+  --clr-grass-200: #73d7c4;
+  --clr-grass-300: #67cdb9;
+  --clr-grass-400: #58c4ab;
+  --clr-grass-500: #4aaf98;
+  --clr-grass-600: #3e997f;
+  --clr-grass-700: #337f6a;
+  --clr-grass-800: #286656;
   /* Fire */
-  --clr-fire-200: #f19d60;
-  --clr-fire-300: #f2904a;
-  --clr-fire-400: #ee8130;
-  --clr-fire-500: #d5722b;
-  --clr-fire-600: #b56324;
-  --clr-fire-700: #94531e;
-  --clr-fire-800: #744318;
+  --clr-fire-200: #f0a078;
+  --clr-fire-300: #f28d64;
+  --clr-fire-400: #f17850;
+  --clr-fire-500: #d76b45;
+  --clr-fire-600: #b55f3b;
+  --clr-fire-700: #944f32;
+  --clr-fire-800: #744028;
   /* Water */
-  --clr-water-200: #84a4f2;
-  --clr-water-300: #7897f1;
-  --clr-water-400: #6390f0;
-  --clr-water-500: #597bda;
-  --clr-water-600: #4e68bd;
-  --clr-water-700: #4254a0;
-  --clr-water-800: #374183;
+  --clr-water-200: #7aa7ed;
+  --clr-water-300: #6e9ce9;
+  --clr-water-400: #618fdf;
+  --clr-water-500: #577ccd;
+  --clr-water-600: #4c6ab3;
+  --clr-water-700: #425998;
+  --clr-water-800: #38477d;
   /* Electric */
-  --clr-electric-200: #f8da54;
-  --clr-electric-300: #f7ce3e;
-  --clr-electric-400: #f7d02c;
-  --clr-electric-500: #d5ba28;
-  --clr-electric-600: #b4a223;
-  --clr-electric-700: #92791d;
-  --clr-electric-800: #706018;
+  --clr-electric-200: #f7e07e;
+  --clr-electric-300: #f6d868;
+  --clr-electric-400: #f6cc4c;
+  --clr-electric-500: #d6b745;
+  --clr-electric-600: #b5a03d;
+  --clr-electric-700: #927935;
+  --clr-electric-800: #70512c;
   /* Normal */
-  --clr-normal-200: #c6c5a1;
-  --clr-normal-300: #b5b490;
-  --clr-normal-400: #a8a77a;
-  --clr-normal-500: #8f8e6a;
-  --clr-normal-600: #797759;
-  --clr-normal-700: #636148;
-  --clr-normal-800: #4d4b38;
+  --clr-normal-200: #c4c7b8;
+  --clr-normal-300: #b3b7a4;
+  --clr-normal-400: #a2a890;
+  --clr-normal-500: #8d957e;
+  --clr-normal-600: #787f6c;
+  --clr-normal-700: #636959;
+  --clr-normal-800: #4e5247;
   /* Ice */
-  --clr-ice-200: #a9e0dd;
-  --clr-ice-300: #9bdad7;
-  --clr-ice-400: #96d9d6;
-  --clr-ice-500: #7fb1af;
-  --clr-ice-600: #6b8f8d;
-  --clr-ice-700: #56716f;
-  --clr-ice-800: #415353;
+  --clr-ice-200: #a3d9e2;
+  --clr-ice-300: #94cbd6;
+  --clr-ice-400: #85bfc8;
+  --clr-ice-500: #72a9b1;
+  --clr-ice-600: #5f8e96;
+  --clr-ice-700: #4c717a;
+  --clr-ice-800: #39555e;
   /* Fighting */
-  --clr-fighting-200: #d7605b;
-  --clr-fighting-300: #d04f4a;
-  --clr-fighting-400: #c22e28;
-  --clr-fighting-500: #a62722;
-  --clr-fighting-600: #8a201c;
-  --clr-fighting-700: #6d1a16;
-  --clr-fighting-800: #50130f;
+  --clr-fighting-200: #db726e;
+  --clr-fighting-300: #d55c58;
+  --clr-fighting-400: #c8443e;
+  --clr-fighting-500: #ab3b35;
+  --clr-fighting-600: #8d332d;
+  --clr-fighting-700: #6e2b24;
+  --clr-fighting-800: #50231b;
   /* Poison */
-  --clr-poison-200: #b85fb4;
-  --clr-poison-300: #aa4da8;
-  --clr-poison-400: #a33ea1;
-  --clr-poison-500: #8c378b;
-  --clr-poison-600: #753075;
-  --clr-poison-700: #5e295e;
-  --clr-poison-800: #472248;
+  --clr-poison-200: #b76fb3;
+  --clr-poison-300: #a85ca6;
+  --clr-poison-400: #9b4b9b;
+  --clr-poison-500: #823f85;
+  --clr-poison-600: #69336e;
+  --clr-poison-700: #522857;
+  --clr-poison-800: #3b1e41;
   /* Ground */
-  --clr-ground-200: #e8cf89;
-  --clr-ground-300: #e0c478;
-  --clr-ground-400: #e2bf65;
-  --clr-ground-500: #c8a755;
-  --clr-ground-600: #a88d47;
-  --clr-ground-700: #8a733a;
-  --clr-ground-800: #6c5a2d;
+  --clr-ground-200: #e2d3a3;
+  --clr-ground-300: #d6c38c;
+  --clr-ground-400: #d2b874;
+  --clr-ground-500: #b8a064;
+  --clr-ground-600: #978453;
+  --clr-ground-700: #766942;
+  --clr-ground-800: #554f31;
   /* Flying */
-  --clr-flying-200: #b8abf5;
-  --clr-flying-300: #ad9ff4;
-  --clr-flying-400: #a98ff3;
-  --clr-flying-500: #8d76d3;
-  --clr-flying-600: #7560ae;
-  --clr-flying-700: #5d4a88;
-  --clr-flying-800: #453462;
+  --clr-flying-200: #adabf7;
+  --clr-flying-300: #9c9df4;
+  --clr-flying-400: #8d8df1;
+  --clr-flying-500: #7877ce;
+  --clr-flying-600: #6262a6;
+  --clr-flying-700: #4c4d7f;
+  --clr-flying-800: #363758;
   /* Psychic */
-  --clr-psychic-200: #fa8fa7;
-  --clr-psychic-300: #f97d98;
-  --clr-psychic-400: #f95587;
-  --clr-psychic-500: #d34875;
-  --clr-psychic-600: #a93a5d;
-  --clr-psychic-700: #7e2b45;
-  --clr-psychic-800: #531d2d;
+  --clr-psychic-200: #f79fb3;
+  --clr-psychic-300: #f88ca3;
+  --clr-psychic-400: #f5738f;
+  --clr-psychic-500: #d5687d;
+  --clr-psychic-600: #b45b6b;
+  --clr-psychic-700: #934d58;
+  --clr-psychic-800: #723f46;
   /* Bug */
-  --clr-bug-200: #bbcd45;
-  --clr-bug-300: #adc335;
-  --clr-bug-400: #a6b91a;
-  --clr-bug-500: #909f15;
-  --clr-bug-600: #7a8411;
-  --clr-bug-700: #64690e;
-  --clr-bug-800: #4d4f0a;
+  --clr-bug-200: #b9d38d;
+  --clr-bug-300: #adc474;
+  --clr-bug-400: #9eb55c;
+  --clr-bug-500: #889d4f;
+  --clr-bug-600: #718440;
+  --clr-bug-700: #5a6b32;
+  --clr-bug-800: #445124;
   /* Rock */
-  --clr-rock-200: #c9bb5d;
-  --clr-rock-300: #c2b150;
-  --clr-rock-400: #b6a136;
-  --clr-rock-500: #9b8930;
-  --clr-rock-600: #7f7129;
-  --clr-rock-700: #635922;
-  --clr-rock-800: #47411b;
+  --clr-rock-200: #cec68d;
+  --clr-rock-300: #c4ba76;
+  --clr-rock-400: #baad5f;
+  --clr-rock-500: #9e9350;
+  --clr-rock-600: #807942;
+  --clr-rock-700: #635f34;
+  --clr-rock-800: #464526;
   /* Ghost */
-  --clr-ghost-200: #83709e;
-  --clr-ghost-300: #7a6496;
-  --clr-ghost-400: #735797;
-  --clr-ghost-500: #60487f;
-  --clr-ghost-600: #4f3c68;
-  --clr-ghost-700: #3d2f51;
-  --clr-ghost-800: #2b223a;
+  --clr-ghost-200: #8f7aad;
+  --clr-ghost-300: #8370a3;
+  --clr-ghost-400: #785799;
+  --clr-ghost-500: #654983;
+  --clr-ghost-600: #523c6b;
+  --clr-ghost-700: #402e53;
+  --clr-ghost-800: #2e213c;
   /* Dragon */
-  --clr-dragon-200: #7a5fff;
-  --clr-dragon-300: #714efc;
-  --clr-dragon-400: #6f35fc;
-  --clr-dragon-500: #6130d9;
-  --clr-dragon-600: #5128b4;
-  --clr-dragon-700: #411f8e;
-  --clr-dragon-800: #311769;
+  --clr-dragon-200: #7d76ff;
+  --clr-dragon-300: #7167f9;
+  --clr-dragon-400: #6355f9;
+  --clr-dragon-500: #5749d9;
+  --clr-dragon-600: #493cb4;
+  --clr-dragon-700: #3b2f8e;
+  --clr-dragon-800: #2d2269;
   /* Dark */
-  --clr-dark-200: #7f6b54;
-  --clr-dark-300: #766149;
-  --clr-dark-400: #705746;
-  --clr-dark-500: #5e483d;
-  --clr-dark-600: #4d3b34;
-  --clr-dark-700: #3c2e2b;
-  --clr-dark-800: #2b2222;
+  --clr-dark-200: #877568;
+  --clr-dark-300: #7c6a5e;
+  --clr-dark-400: #705f53;
+  --clr-dark-500: #5e5045;
+  --clr-dark-600: #4d4038;
+  --clr-dark-700: #3b302a;
+  --clr-dark-800: #2a211d;
   /* Steel */
-  --clr-steel-200: #cbcbd6;
-  --clr-steel-300: #b9b9c7;
-  --clr-steel-400: #b7b7ce;
-  --clr-steel-500: #9e9eb4;
-  --clr-steel-600: #838399;
-  --clr-steel-700: #69697d;
-  --clr-steel-800: #4f4f61;
+  --clr-steel-200: #c8c9da;
+  --clr-steel-300: #b7b8cb;
+  --clr-steel-400: #9d9fc5;
+  --clr-steel-500: #8789ac;
+  --clr-steel-600: #6f7191;
+  --clr-steel-700: #585976;
+  --clr-steel-800: #41415b;
   /* Fairy */
-  --clr-fairy-200: #e09ab3;
-  --clr-fairy-300: #db89a9;
-  --clr-fairy-400: #d685ad;
-  --clr-fairy-500: #b47594;
-  --clr-fairy-600: #93647a;
-  --clr-fairy-700: #725360;
-  --clr-fairy-800: #514247;
+  --clr-fairy-200: #dba3bb;
+  --clr-fairy-300: #d792ae;
+  --clr-fairy-400: #cd869d;
+  --clr-fairy-500: #b07686;
+  --clr-fairy-600: #93656f;
+  --clr-fairy-700: #745258;
+  --clr-fairy-800: #553f41;
   --ff-global: system-ui, sans-serif;
   font-family: var(--ff-global);
   color-scheme: dark light;
@@ -291,8 +291,8 @@ textarea:not([rows]) {
 }
 
 .pokemon {
-  max-height: 800px;
-  overflow-x: scroll;
+  max-height: 600px;
+  overflow-x: hidden;
 }
 .pokemon__list {
   display: grid;
@@ -324,6 +324,63 @@ textarea:not([rows]) {
 }
 .pokemon__image {
   max-width: 6rem;
+}
+
+.pokemon-card {
+  --padding-card: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--clr-grass-400);
+  position: relative;
+  min-height: 100dvh;
+}
+@media (min-width: 500px) {
+  .pokemon-card {
+    color: white;
+  }
+}
+.pokemon-card__top-half {
+  padding: var(--padding-card);
+}
+.pokemon-card__name {
+  text-transform: capitalize;
+}
+.pokemon-card__types {
+  max-width: 11rem;
+}
+.pokemon-card__type {
+  width: 5rem;
+  border: 1px solid white;
+  border-radius: 100vw;
+  padding: 0.5em;
+  line-height: 1;
+  text-align: center;
+  text-transform: capitalize;
+}
+.pokemon-card__image {
+  position: absolute;
+  max-width: 20rem;
+}
+.pokemon-card__lower-half {
+  padding: var(--padding-card);
+  border-radius: 2rem 2rem 0 0;
+  background-color: white;
+}
+.pokemon-card__tab-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.pokemon-card__tab-button {
+  border: 0;
+  font-weight: 500;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+}
+.pokemon-card__tab-content {
+  color: black;
 }
 
 .flex {
