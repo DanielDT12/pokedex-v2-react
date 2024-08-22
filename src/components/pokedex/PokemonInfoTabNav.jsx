@@ -4,28 +4,45 @@ export default function PokemonInfoTabNav({
 	setActiveTab,
 }) {
 	const renderTabContent = () => {
+		const calculateTotal = () => {
+			return pokemonCard.stats.reduce((total, stat) => {
+				return total + stat.base_stat;
+			}, 0);
+		};
+
 		switch (activeTab) {
 			case "about":
 				return (
-					<div>
+					<div className="pokemon-card__tab">
 						<h1>This is the active tab test</h1>
 					</div>
 				);
 			case "baseStats":
 				return (
-					<div>
-						<h1>This is the base stats tab test</h1>
+					<div className="pokemon-card__tab">
+						<ul className="pokemon-card__stats-list" role="list">
+							{pokemonCard.stats.map((stat, index) => (
+								<li className="pokemon-card__list-item" key={index}>
+									<p>{stat.stat.name}</p>
+									<p>{stat.base_stat}</p>
+								</li>
+							))}
+							<li className="pokemon-card__list-item">
+								<p>Total</p>
+								<p>{calculateTotal()}</p>
+							</li>
+						</ul>
 					</div>
 				);
 			case "evolution":
 				return (
-					<div>
+					<div className="pokemon-card__tab">
 						<h1>This is the evolution tab test</h1>
 					</div>
 				);
 			case "moves":
 				return (
-					<div>
+					<div className="pokemon-card__tab">
 						<h1>This is the moves tab test</h1>
 					</div>
 				);
