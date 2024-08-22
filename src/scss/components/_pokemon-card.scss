@@ -2,12 +2,11 @@
 @use "../base/root" as *;
 
 .pokemon-card {
-	--padding-card: 2rem 1rem;
+	--padding-card: 3rem 2rem;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: var(--clr-grass-400); // placeholder
 
 	position: relative;
 	min-height: 100dvh;
@@ -16,23 +15,42 @@
 		color: white; // placeholder, media query for 500px og opp
 	}
 
+	&__nav {
+		margin-bottom: 1rem;
+	}
+
+	&__link {
+		color: white;
+		font-size: 2rem;
+		text-decoration: none;
+		line-height: 1;
+	}
+
 	&__top-half {
 		padding: var(--padding-card); // lokal custom prop for padding
 	}
 
 	&__name {
+		font-size: 1.875rem;
 		text-transform: capitalize;
 	}
 
+	&__id {
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+
 	&__types {
+		margin-top: 0.5rem;
 		max-width: 11rem;
 	}
 
 	&__type {
 		width: 5rem;
-		border: 1px solid white;
 		border-radius: 100vw;
-		padding: 0.5em;
+		padding: 0.35em;
+		font-weight: 500;
+		background-color: hsla(0, 100%, 100%, 0.25);
 		line-height: 1;
 		text-align: center;
 		text-transform: capitalize;
@@ -40,7 +58,9 @@
 
 	&__image {
 		position: absolute; // absolute position til bilde overlap
-		max-width: 20rem;
+		inset: 0;
+		margin: 12rem auto 0 auto;
+		max-width: clamp(18rem, 5vw, 20rem);
 	}
 
 	&__lower-half {
@@ -65,5 +85,18 @@
 
 	&__tab-content {
 		color: black;
+	}
+
+	&__stats-list {
+		margin-top: 1rem;
+	}
+
+	&__list-item {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 0.5rem;
+		max-width: 10rem;
+		font-weight: 500;
+		text-transform: capitalize;
 	}
 }
