@@ -51,12 +51,12 @@ export default function Pokemon() {
 				<div className="pokemon-card__top-half">
 					<PrimaryNav
 						navClass={"pokemon-card__nav"}
-						linkTo={"/pokemon"}
+						linkTo={"/pokedex"}
 						linkClass={"pokemon-card__link"}
 					/>
 					<div className="flex-between">
 						<h2 className="pokemon-card__name">{pokemonCard.name}</h2>
-						<p>#{pokemonCard.id}</p>
+						<p className="pokemon-card__id">#{pokemonCard.id}</p>
 					</div>
 					<div className="pokemon-card__types flex-between">
 						<p className="pokemon-card__type">
