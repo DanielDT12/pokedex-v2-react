@@ -1,6 +1,6 @@
 .pokemon {
-	max-height: 800px; // Placeholder, trenger bedre overflow
-	overflow-x: scroll;
+	max-height: 600px; // Placeholder, trenger bedre overflow
+	overflow-x: hidden;
 
 	&__list {
 		display: grid;
