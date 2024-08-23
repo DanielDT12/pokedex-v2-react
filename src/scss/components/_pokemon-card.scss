@@ -11,10 +11,6 @@
 	position: relative;
 	min-height: 100dvh;
 
-	@include smallMq {
-		color: white; // placeholder, media query for 500px og opp
-	}
-
 	&__nav {
 		margin-bottom: 1rem;
 	}
