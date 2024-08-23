@@ -16,7 +16,7 @@ const router = createBrowserRouter([
 		element: <Pokedex />,
 	},
 	{
-		path: "/pokedex/:pokemonName", // Dynamic path name, importerer useParams i pokemon.jsx
+		path: "/pokedex/:pokemonName", // Dynamic path name, importerer useParams i pokemonCard.jsx
 		element: <Pokemon />,
 	},
 ]);
