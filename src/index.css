@@ -291,7 +291,7 @@ textarea:not([rows]) {
 }
 
 .pokemon {
-  max-height: 600px;
+  max-height: 800px;
   overflow-x: hidden;
 }
 .pokemon__list {
@@ -299,9 +299,13 @@ textarea:not([rows]) {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
+@media (max-width: 360px) {
+  .pokemon__list {
+    grid-template-columns: 1fr;
+  }
+}
 .pokemon__list-item {
   padding: 1rem;
-  border: 1px solid white;
   border-radius: 0.75rem;
 }
 .pokemon__link {
@@ -312,12 +316,26 @@ textarea:not([rows]) {
   font-size: clamp(1.125rem, 3vw, 1.875rem);
   text-transform: capitalize;
 }
+.pokemon__type-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 440px) {
+  .pokemon__type-img-container {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 1rem;
+    height: 80%;
+  }
+}
 .pokemon__type {
   width: 4rem;
-  border: 1px solid white;
   border-radius: 100vw;
   padding: 0.5em;
   font-size: clamp(0.875rem, 3vw, 1rem);
+  background-color: hsla(0, 100%, 100%, 0.35);
   text-transform: capitalize;
   text-align: center;
   line-height: 1;
@@ -333,11 +351,6 @@ textarea:not([rows]) {
   justify-content: space-between;
   position: relative;
   min-height: 100dvh;
-}
-@media (min-width: 500px) {
-  .pokemon-card {
-    color: white;
-  }
 }
 .pokemon-card__nav {
   margin-bottom: 1rem;
@@ -439,6 +452,78 @@ textarea:not([rows]) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.grass-type {
+  background-color: var(--clr-grass-400);
+}
+
+.fire-type {
+  background-color: var(--clr-fire-500);
+}
+
+.water-type {
+  background-color: var(--clr-water-400);
+}
+
+.electric-type {
+  background-color: var(--clr-electric-400);
+}
+
+.normal-type {
+  background-color: var(--clr-normal-400);
+}
+
+.ground-type {
+  background-color: var(--clr-ground-400);
+}
+
+.rock-type {
+  background-color: var(--clr-rock-400);
+}
+
+.ice-type {
+  background-color: var(--clr-ice-400);
+}
+
+.psychic-type {
+  background-color: var(--clr-psychic-400);
+}
+
+.flying-type {
+  background-color: var(--clr-flying-400);
+}
+
+.dark-type {
+  background-color: var(--clr-dark-400);
+}
+
+.bug-type {
+  background-color: var(--clr-bug-400);
+}
+
+.fairy-type {
+  background-color: var(--clr-fairy-400);
+}
+
+.steel-type {
+  background-color: var(--clr-steel-400);
+}
+
+.dragon-type {
+  background-color: var(--clr-dragon-400);
+}
+
+.ghost-type {
+  background-color: var(--clr-ghost-400);
+}
+
+.poison-type {
+  background-color: var(--clr-poison-400);
+}
+
+.fighting-type {
+  background-color: var(--clr-fighting-400);
 }
 
 /*# sourceMappingURL=index.css.map */
