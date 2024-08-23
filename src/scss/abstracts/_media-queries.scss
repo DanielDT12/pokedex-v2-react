@@ -1,3 +1,15 @@
+@mixin smallMobile() {
+	@media (max-width: 360px) {
+		@content;
+	}
+}
+
+@mixin xsmallMq() {
+	@media (max-width: 440px) {
+		@content;
+	}
+}
+
 @mixin smallMq() {
 	@media (min-width: 500px) {
 		@content;
