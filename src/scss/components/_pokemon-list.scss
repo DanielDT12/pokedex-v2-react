@@ -1,16 +1,21 @@
+@use "../abstracts/media-queries" as *;
+
 .pokemon {
-	max-height: 600px; // Placeholder, trenger bedre overflow
+	max-height: 800px; // Placeholder, trenger bedre overflow
 	overflow-x: hidden;
 
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem;
+
+		@include smallMobile() {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__list-item {
 		padding: 1rem;
-		border: 1px solid white; // placeholder
 		border-radius: 0.75rem;
 	}
 
@@ -24,12 +29,26 @@
 		text-transform: capitalize;
 	}
 
+	&__type-img-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@include xsmallMq() {
+			flex-direction: column;
+			justify-content: space-between;
+			margin-top: 1rem;
+			gap: 1rem;
+			height: 80%;
+		}
+	}
+
 	&__type {
 		width: 4rem;
-		border: 1px solid white;
 		border-radius: 100vw; // lager pille form på container
 		padding: 0.5em;
 		font-size: clamp(0.875rem, 3vw, 1rem);
+		background-color: hsla(0, 100%, 100%, 0.35);
 		text-transform: capitalize;
 		text-align: center;
 		line-height: 1;
