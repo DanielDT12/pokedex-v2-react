@@ -47,7 +47,9 @@ export default function Pokemon() {
 
 	return (
 		<>
-			<div className="pokemon-card">
+			<div className={`pokemon-card ${pokemonCard.types[0].type.name}-type`}>
+				{" "}
+				{/* DYNAMIC CLASS NAME FOR BACKGROUND COLOR */}
 				<div className="pokemon-card__top-half">
 					<PrimaryNav
 						navClass={"pokemon-card__nav"}

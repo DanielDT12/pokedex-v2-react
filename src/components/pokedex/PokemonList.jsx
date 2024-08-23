@@ -9,7 +9,7 @@ export default function PokemonList() {
 	useEffect(() => {
 		const GetPokemonList = async () => {
 			try {
-				const response = await fetch(`${BASE_URL}pokemon?limit=10`);
+				const response = await fetch(`${BASE_URL}pokemon?limit=100`);
 				const data = await response.json();
 				const results = data.results;
 
@@ -46,13 +46,16 @@ export default function PokemonList() {
 		<div className="pokemon">
 			<ol className="pokemon__list" role="list">
 				{pokemonList.map((pokemon, index) => (
-					<li className="pokemon__list-item" key={index}>
+					<li
+						className={`pokemon__list-item ${pokemon.types[0]}-type`} // dynamic class name for background color
+						key={index}
+					>
 						<Link className="pokemon__link" to={`/pokedex/${pokemon.name}`}>
 							<div className="flex-between">
 								<h2 className="pokemon__name">{pokemon.name}</h2>
 								<p>#{pokemon.id}</p>
 							</div>
-							<div className="flex-between">
+							<div className="pokemon__type-img-container">
 								<div className="flex-col" style={{ gap: ".5rem" }}>
 									<p className="pokemon__type">{pokemon.types[0]}</p>
 									{pokemon.types[1] && (
