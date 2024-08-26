@@ -1,7 +1,7 @@
 import { SiPokemon } from "react-icons/si";
 import { Link } from "react-router-dom";
 
-export default function Main() {
+export default function App() {
 	return (
 		<main className="homepage">
 			<div className="homepage__wrapper">
