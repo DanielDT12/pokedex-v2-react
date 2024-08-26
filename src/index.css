@@ -106,13 +106,13 @@ textarea:not([rows]) {
   --clr-grass-700: #337f6a;
   --clr-grass-800: #286656;
   /* Fire */
-  --clr-fire-200: #f0a078;
-  --clr-fire-300: #f28d64;
-  --clr-fire-400: #f17850;
-  --clr-fire-500: #d76b45;
-  --clr-fire-600: #b55f3b;
-  --clr-fire-700: #944f32;
-  --clr-fire-800: #744028;
+  --clr-fire-200: #f08088;
+  --clr-fire-300: #ea6c6d;
+  --clr-fire-400: #e65854;
+  --clr-fire-500: #d4464b;
+  --clr-fire-600: #b43d44;
+  --clr-fire-700: #94333b;
+  --clr-fire-800: #742932;
   /* Water */
   --clr-water-200: #7aa7ed;
   --clr-water-300: #6e9ce9;
@@ -146,13 +146,13 @@ textarea:not([rows]) {
   --clr-ice-700: #4c717a;
   --clr-ice-800: #39555e;
   /* Fighting */
-  --clr-fighting-200: #db726e;
-  --clr-fighting-300: #d55c58;
-  --clr-fighting-400: #c8443e;
-  --clr-fighting-500: #ab3b35;
-  --clr-fighting-600: #8d332d;
-  --clr-fighting-700: #6e2b24;
-  --clr-fighting-800: #50231b;
+  --clr-fighting-200: #e37f6e;
+  --clr-fighting-300: #de6958;
+  --clr-fighting-400: #d05242;
+  --clr-fighting-500: #b34839;
+  --clr-fighting-600: #973f31;
+  --clr-fighting-700: #7a3528;
+  --clr-fighting-800: #5e2b20;
   /* Poison */
   --clr-poison-200: #b76fb3;
   --clr-poison-300: #a85ca6;
@@ -298,6 +298,7 @@ textarea:not([rows]) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  text-shadow: 2px 2px 1px rgb(24, 24, 24);
 }
 @media (max-width: 360px) {
   .pokemon__list {
