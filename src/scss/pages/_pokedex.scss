@@ -1,8 +1,14 @@
+@use "../abstracts/media-queries" as *;
+
 .pokedex {
 	min-height: 100dvh;
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
+
+	@include xsmallMq() {
+		padding: 0.75rem;
+	}
 
 	&__nav-wrapper {
 		display: flex;
