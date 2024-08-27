@@ -321,14 +321,6 @@ textarea:not([rows]) {
   color: white;
   text-decoration: none;
 }
-.pokemon__pokeball-decoration {
-  position: absolute;
-  bottom: -1rem;
-  right: -1rem;
-  width: 10rem;
-  height: 10rem;
-  z-index: 0;
-}
 .pokemon__name {
   font-size: clamp(1.125rem, 3vw, 1.875rem);
   text-transform: capitalize;
