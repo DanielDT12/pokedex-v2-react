@@ -26,11 +26,15 @@ export default function PokemonInfoTabNav({
 						<ul className="pokemon-card__list" role="list">
 							<li className="pokemon-card__list-item">
 								<p>Height</p>
-								<p>{pokemonCard.height * 10} cm</p>
+								<p style={{ textTransform: "lowercase" }}>
+									{pokemonCard.height * 10} cm
+								</p>
 							</li>
 							<li className="pokemon-card__list-item">
 								<p>Weight</p>
-								<p>{pokemonCard.weight / 10} kg</p>
+								<p style={{ textTransform: "lowercase" }}>
+									{pokemonCard.weight / 10} kg
+								</p>
 							</li>
 							<li className="pokemon-card__list-item">
 								<p>Base.Exp</p>
@@ -65,12 +69,6 @@ export default function PokemonInfoTabNav({
 						</ul>
 					</div>
 				);
-			case "evolution":
-				return (
-					<div className="pokemon-card__tab">
-						<h1>This is the evolution tab test</h1>
-					</div>
-				);
 			case "moves":
 				return (
 					<div className="pokemon-card__tab">
@@ -101,12 +99,6 @@ export default function PokemonInfoTabNav({
 					className="pokemon-card__tab-button"
 				>
 					Base Stats
-				</button>
-				<button
-					onClick={() => setActiveTab("evolution")}
-					className="pokemon-card__tab-button"
-				>
-					Evolution
 				</button>
 				<button
 					onClick={() => setActiveTab("moves")}
