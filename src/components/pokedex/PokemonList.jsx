@@ -9,7 +9,7 @@ export default function PokemonList() {
 	useEffect(() => {
 		const GetPokemonList = async () => {
 			try {
-				const response = await fetch(`${BASE_URL}pokemon?limit=1024`);
+				const response = await fetch(`${BASE_URL}pokemon?limit=100`);
 				const data = await response.json();
 				const results = data.results;
 
@@ -28,7 +28,6 @@ export default function PokemonList() {
 					})
 				);
 
-				console.log(finalPokemonObj);
 				setPokemonlist(finalPokemonObj);
 				setLoading(false);
 			} catch (error) {
