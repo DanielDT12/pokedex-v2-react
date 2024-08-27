@@ -4,6 +4,10 @@
 	max-height: 800px; // Placeholder, trenger bedre overflow
 	overflow-x: hidden;
 
+	&::-webkit-scrollbar {
+		display: none; // gjemmer scrollbar men har fortsatt mulighet til og scrolle
+	}
+
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -41,6 +45,11 @@
 			margin-top: 1rem;
 			gap: 1rem;
 			height: 80%;
+		}
+
+		@include smallMobile() {
+			flex-direction: row;
+			margin-top: 0.5rem;
 		}
 	}
 
