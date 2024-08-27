@@ -2,7 +2,7 @@
 @use "../base/root" as *;
 
 .pokemon-card {
-	--padding-card: 3rem 2rem;
+	--padding-card: 2rem;
 
 	display: flex;
 	flex-direction: column;
@@ -53,13 +53,13 @@
 	}
 
 	&__image {
-		position: absolute; // absolute position til bilde overlap
-		inset: 0;
-		margin: 12rem auto 0 auto;
-		max-width: clamp(18rem, 5vw, 20rem);
+		align-self: center;
+		max-width: 18rem;
+		margin-block: 2rem;
 	}
 
 	&__lower-half {
+		flex: 1;
 		padding: var(--padding-card);
 		border-radius: 2rem 2rem 0 0;
 		background-color: white;
@@ -83,15 +83,21 @@
 		color: black;
 	}
 
-	&__stats-list {
+	&__list {
 		margin-top: 1rem;
+		height: 230px;
+		overflow: scroll;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 
 	&__list-item {
 		display: flex;
 		justify-content: space-between;
-		margin-top: 0.5rem;
 		max-width: 10rem;
+		margin-top: 0.5rem;
 		font-weight: 500;
 		text-transform: capitalize;
 	}
