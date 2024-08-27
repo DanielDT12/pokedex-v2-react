@@ -10,20 +10,51 @@ export default function PokemonInfoTabNav({
 			}, 0);
 		};
 
+		const statNameArray = [
+			"Hp",
+			"Attack",
+			"Defense",
+			"Sp.Atk",
+			"Sp.Def",
+			"Speed",
+		];
+
 		switch (activeTab) {
 			case "about":
 				return (
 					<div className="pokemon-card__tab">
-						<h1>This is the active tab test</h1>
+						<ul className="pokemon-card__list" role="list">
+							<li className="pokemon-card__list-item">
+								<p>Height</p>
+								<p>{pokemonCard.height * 10} cm</p>
+							</li>
+							<li className="pokemon-card__list-item">
+								<p>Weight</p>
+								<p>{pokemonCard.weight / 10} kg</p>
+							</li>
+							<li className="pokemon-card__list-item">
+								<p>Base.Exp</p>
+								<p>{pokemonCard.base_experience}</p>
+							</li>
+							<li
+								className="pokemon-card__list-item flex-col"
+								style={{ gap: ".25rem" }}
+							>
+								<p>Abilities:</p>
+								{pokemonCard.abilities.map((ability, index) => (
+									<p key={index}>- {ability.ability.name}</p>
+								))}
+							</li>
+						</ul>
 					</div>
 				);
 			case "baseStats":
 				return (
 					<div className="pokemon-card__tab">
-						<ul className="pokemon-card__stats-list" role="list">
+						<ul className="pokemon-card__list" role="list">
 							{pokemonCard.stats.map((stat, index) => (
 								<li className="pokemon-card__list-item" key={index}>
-									<p>{stat.stat.name}</p>
+									<p>{statNameArray[index]}</p>
 									<p>{stat.base_stat}</p>
 								</li>
 							))}
@@ -43,7 +74,14 @@ export default function PokemonInfoTabNav({
 			case "moves":
 				return (
 					<div className="pokemon-card__tab">
-						<h1>This is the moves tab test</h1>
+						<h2 style={{ marginBlockStart: "1rem" }}>Moves:</h2>
+						<ul className="pokemon-card__list">
+							{pokemonCard.moves.map((move, index) => (
+								<li className="pokemon-card__list-item" key={index}>
+									{move.move.name}
+								</li>
+							))}
+						</ul>
 					</div>
 				);
 		}
